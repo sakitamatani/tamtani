@@ -1,2 +1,0 @@
-from .segmentation_data_generator import SegmentationDataGenerator
-from .color_map import ColorMap
