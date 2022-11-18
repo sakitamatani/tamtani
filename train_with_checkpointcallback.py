@@ -26,8 +26,8 @@ ID_CANCER = 1
 TARGET_CLASS_IDS = [ID_CANCER]
 
 GPU_NUM = 0
-BATCH_SIZE = 64
-EPOCHS = 5
+BATCH_SIZE = 48
+EPOCHS = 150
 
 model = UNet(len(TARGET_CLASS_IDS) + 1, gpu_num=GPU_NUM)
 input_shape = tuple(model.input.shape[1:3])
