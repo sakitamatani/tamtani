@@ -10,7 +10,7 @@ from utils import SegmentationDataGenerator
 def print_log(*log_str):
     print('<train> Log : ', *log_str)
 
-DATA_DIR = 'jikkendata/jikken2/akusei'
+DATA_DIR = 'jikkendata/jikken1/akusei'
 TRAIN_BASE_DIR = os.path.join(DATA_DIR, 'train')
 TRAIN_INPUTS_DIR = os.path.join(TRAIN_BASE_DIR, 'inputs')
 TRAIN_TEACHERS_DIR = os.path.join(TRAIN_BASE_DIR, 'teachers')
