@@ -10,7 +10,7 @@ from utils import SegmentationDataGenerator
 def print_log(*log_str):
     print('<train> Log : ', *log_str)
 
-DATA_DIR = 'jikkendata/jikken1/akusei'
+DATA_DIR = 'jikkendata/jikken1/ryousei'
 TRAIN_BASE_DIR = os.path.join(DATA_DIR, 'train')
 TRAIN_INPUTS_DIR = os.path.join(TRAIN_BASE_DIR, 'inputs')
 TRAIN_TEACHERS_DIR = os.path.join(TRAIN_BASE_DIR, 'teachers')
@@ -27,7 +27,7 @@ TARGET_CLASS_IDS = [ID_CANCER]
 
 GPU_NUM = 0
 BATCH_SIZE = 48
-EPOCHS = 150
+EPOCHS = 100
 
 model = UNet(len(TARGET_CLASS_IDS) + 1, gpu_num=GPU_NUM)
 input_shape = tuple(model.input.shape[1:3])
